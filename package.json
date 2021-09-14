@@ -1,0 +1,32 @@
+{
+  "name": "tukasz.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "ts-node lib/compile.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tukasz/tukasz.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tukasz/tukasz.github.io/issues"
+  },
+  "homepage": "https://github.com/tukasz/tukasz.github.io#readme",
+  "devDependencies": {
+    "@types/glob": "^7.1.4",
+    "@types/handlebars": "^4.1.0",
+    "@types/marked": "^3.0.1",
+    "@types/node": "^16.9.1",
+    "glob": "^7.1.7",
+    "handlebars": "^4.7.7",
+    "highlight.js": "^11.2.0",
+    "marked": "^3.0.3",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  }
+}
