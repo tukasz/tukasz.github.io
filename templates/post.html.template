@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{ postTitle }} - {{ pageTitle }}</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.min.css">
+    {{#if hasCodeSnippets}}
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/atom-one-dark.min.css"
+    />
+    {{/if}}
+    <link rel="stylesheet" href="{{ cssStylesHref }}" />
+  </head>
+
+  <body>
+    <div class="page-content">
+      <h1 class="post-title">{{ postTitle }}</h1>
+
+      <div class="post-subtitle">
+        <div class="post-date">{{ date }}</div>
+
+        <div class="post-tags">
+          {{#each tags}}
+          <code class="post-tag">{{ this }}</code
+          >&nbsp;
+          {{/each}}
+        </div>
+      </div>
+
+      <div class="post-body">{{{body}}}</div>
+    </div>
+  </body>
+</html>
