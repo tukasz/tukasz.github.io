@@ -99,6 +99,23 @@ code:not(.code-block) {
   max-width: 50rem;
 }
 
+.post-title {
+  display: flex;
+  align-items: center;
+}
+
+.post-title .go-home-icon {
+  margin-right: 2rem;
+}
+
+.post-title .go-home-icon a {
+  color: #d4d4d4;
+}
+
+.post-title .post-title-separator {
+  margin: 0 1rem;
+}
+
 .post-subtitle {
   display: flex;
   align-items: center;
@@ -106,5 +123,23 @@ code:not(.code-block) {
 }
 
 .post-tag {
+  font-size: 0.75rem !important;
+}
+
+.posts-toc-item {
+  margin-bottom: 1.5rem;
+}
+
+.posts-toc-item-date {
+  font-size: 0.75rem;
+}
+
+.posts-toc-item-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.posts-toc-item-tag {
   font-size: 0.75rem !important;
 }

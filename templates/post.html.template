@@ -18,7 +18,13 @@
 
   <body>
     <div class="page-content">
-      <h1 class="post-title">{{ postTitle }}</h1>
+      <h1 class="post-title">
+        <div class="go-home-icon">
+          <a href="/"><i data-feather="home"></i></a>
+        </div>
+
+        {{ postTitle }}
+      </h1>
 
       <div class="post-subtitle">
         <div class="post-date">{{ date }}</div>
@@ -33,5 +39,11 @@
 
       <div class="post-body">{{{body}}}</div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <script>
+      feather.replace()
+    </script>
   </body>
 </html>

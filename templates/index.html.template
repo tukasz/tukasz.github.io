@@ -23,13 +23,13 @@
 
           <div class="posts-toc-item-title">
             <a class="posts-toc-item-href" href="posts/{{href}}">{{ title }}</a>
-          </div>
 
-          <div class="posts-toc-item-tags">
-            {{#each tags}}
-            <code>{{ this }}</code
-            >&nbsp;
-            {{/each}}
+            <div class="posts-toc-item-tags">
+              {{#each tags}}
+              <code class="posts-toc-item-tag">{{ this }}</code
+              >&nbsp;
+              {{/each}}
+            </div>
           </div>
         </div>
         {{/each}}
